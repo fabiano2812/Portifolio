@@ -1,0 +1,1081 @@
+2023.12.20 13:46:35 INFO  Started: Metals version 1.2.0 in folders 'C:\Fabiano\PortFólio' for client Visual Studio Code 1.85.1.
+2023.12.20 13:46:37 WARN  Build server is not auto-connectable.
+2023.12.20 13:46:37 WARN  no build tool detected in workspace 'C:\Fabiano\PortFólio'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2023.12.20 13:46:37 WARN  no build target for: C:\Fabiano\PortFólio\portifolio\html\teste.scala
+2023.12.20 13:46:53 INFO  no build target found for C:\Fabiano\PortFólio\portifolio\html\teste.scala. Using presentation compiler with project's scala-library version: 3.3.1
+dez 20, 2023 1:46:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTÊNCIA: Unmatched cancel notification for request id 27
+dez 20, 2023 1:46:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTÊNCIA: Unmatched cancel notification for request id 28
+dez 20, 2023 1:46:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTÊNCIA: Unmatched cancel notification for request id 22
+2023.12.20 13:46:54 WARN  no build target for: C:\Fabiano\PortFólio\portifolio\html\teste.scala
+2023.12.20 13:46:56 INFO  time: code lens generation in 2.89s
+2023.12.20 13:46:56 INFO  time: code lens generation in 9.9s
+2023.12.20 13:46:56 INFO  time: code lens generation in 2.81s
+2023.12.20 13:46:56 INFO  time: code lens generation in 2.82s
+2023.12.20 13:46:56 INFO  time: code lens generation in 3.01s
+2023.12.20 13:46:56 INFO  time: code lens generation in 11s
+2023.12.20 13:46:56 INFO  time: code lens generation in 16s
+2023.12.20 13:46:56 INFO  time: code lens generation in 9.31s
+2023.12.20 13:47:30 WARN  no build target for: C:\Fabiano\PortFólio\portifolio\html\template\header.scala.scala
+dez 20, 2023 1:47:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+GRAVE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: file:///C:/Fabiano/PortFólio/portifolio/html/template/header.scala.scala:8: error: malformed xml literal, expected:
+Expected ([\t\n\r ] | "/>" | ">"):8:49, found "template/a"
+            <img src="@routes.Assets.versioned("template/assets/img/logo.png")" alt="">
+                                                ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getXml(LegacyScanner.scala:937)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchLT$1(LegacyScanner.scala:295)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:303)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.loop(ScalaToplevelMtags.scala:280)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:56)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:19)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:43)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:125)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:384)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$4(DefinitionProvider.scala:304)
+	at scala.Option.orElse(Option.scala:477)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:304)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:296)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$definitionOrReferences$1(MetalsLspService.scala:2524)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.MetalsLspService.definitionOrReferences(MetalsLspService.scala:2520)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$definition$1(MetalsLspService.scala:1409)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLspService.definition(MetalsLspService.scala:1408)
+	at scala.meta.internal.metals.WorkspaceLspService.definition(WorkspaceLspService.scala:373)
+	at scala.meta.metals.lsp.DelegatingScalaService.definition(DelegatingScalaService.scala:69)
+	... 16 more
+
+dez 20, 2023 1:47:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+GRAVE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: file:///C:/Fabiano/PortFólio/portifolio/html/template/header.scala.scala:8: error: malformed xml literal, expected:
+Expected ([\t\n\r ] | "/>" | ">"):8:49, found "template/a"
+            <img src="@routes.Assets.versioned("template/assets/img/logo.png")" alt="">
+                                                ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getXml(LegacyScanner.scala:937)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchLT$1(LegacyScanner.scala:295)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:303)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.loop(ScalaToplevelMtags.scala:280)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:56)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:19)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:43)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:125)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:384)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$4(DefinitionProvider.scala:304)
+	at scala.Option.orElse(Option.scala:477)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:304)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:296)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$definitionOrReferences$1(MetalsLspService.scala:2524)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.MetalsLspService.definitionOrReferences(MetalsLspService.scala:2520)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$definition$1(MetalsLspService.scala:1409)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLspService.definition(MetalsLspService.scala:1408)
+	at scala.meta.internal.metals.WorkspaceLspService.definition(WorkspaceLspService.scala:373)
+	at scala.meta.metals.lsp.DelegatingScalaService.definition(DelegatingScalaService.scala:69)
+	... 16 more
+
+dez 20, 2023 1:47:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+GRAVE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: file:///C:/Fabiano/PortFólio/portifolio/html/template/header.scala.scala:8: error: malformed xml literal, expected:
+Expected ([\t\n\r ] | "/>" | ">"):8:49, found "template/a"
+            <img src="@routes.Assets.versioned("template/assets/img/logo.png")" alt="">
+                                                ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getXml(LegacyScanner.scala:937)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchLT$1(LegacyScanner.scala:295)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:303)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.loop(ScalaToplevelMtags.scala:280)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:56)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:19)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:43)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:125)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:384)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$4(DefinitionProvider.scala:304)
+	at scala.Option.orElse(Option.scala:477)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:304)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:296)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$definitionOrReferences$1(MetalsLspService.scala:2524)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.MetalsLspService.definitionOrReferences(MetalsLspService.scala:2520)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$definition$1(MetalsLspService.scala:1409)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLspService.definition(MetalsLspService.scala:1408)
+	at scala.meta.internal.metals.WorkspaceLspService.definition(WorkspaceLspService.scala:373)
+	at scala.meta.metals.lsp.DelegatingScalaService.definition(DelegatingScalaService.scala:69)
+	... 16 more
+
+dez 20, 2023 1:47:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+GRAVE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: file:///C:/Fabiano/PortFólio/portifolio/html/template/header.scala.scala:8: error: malformed xml literal, expected:
+Expected ([\t\n\r ] | "/>" | ">"):8:49, found "template/a"
+            <img src="@routes.Assets.versioned("template/assets/img/logo.png")" alt="">
+                                                ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getXml(LegacyScanner.scala:937)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchLT$1(LegacyScanner.scala:295)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:303)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.loop(ScalaToplevelMtags.scala:280)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:56)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:19)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:43)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:125)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:384)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$4(DefinitionProvider.scala:304)
+	at scala.Option.orElse(Option.scala:477)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:304)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:296)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$definitionOrReferences$1(MetalsLspService.scala:2524)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.MetalsLspService.definitionOrReferences(MetalsLspService.scala:2520)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$definition$1(MetalsLspService.scala:1409)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLspService.definition(MetalsLspService.scala:1408)
+	at scala.meta.internal.metals.WorkspaceLspService.definition(WorkspaceLspService.scala:373)
+	at scala.meta.metals.lsp.DelegatingScalaService.definition(DelegatingScalaService.scala:69)
+	... 16 more
+
+dez 20, 2023 1:47:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+GRAVE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: file:///C:/Fabiano/PortFólio/portifolio/html/template/header.scala.scala:8: error: malformed xml literal, expected:
+Expected ([\t\n\r ] | "/>" | ">"):8:49, found "template/a"
+            <img src="@routes.Assets.versioned("template/assets/img/logo.png")" alt="">
+                                                ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getXml(LegacyScanner.scala:937)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchLT$1(LegacyScanner.scala:295)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:303)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.loop(ScalaToplevelMtags.scala:280)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:56)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:19)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:43)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:125)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:384)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$4(DefinitionProvider.scala:304)
+	at scala.Option.orElse(Option.scala:477)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:304)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:296)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$definitionOrReferences$1(MetalsLspService.scala:2524)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.MetalsLspService.definitionOrReferences(MetalsLspService.scala:2520)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$definition$1(MetalsLspService.scala:1409)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLspService.definition(MetalsLspService.scala:1408)
+	at scala.meta.internal.metals.WorkspaceLspService.definition(WorkspaceLspService.scala:373)
+	at scala.meta.metals.lsp.DelegatingScalaService.definition(DelegatingScalaService.scala:69)
+	... 16 more
+
+dez 20, 2023 1:47:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+GRAVE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: file:///C:/Fabiano/PortFólio/portifolio/html/template/header.scala.scala:8: error: malformed xml literal, expected:
+Expected ([\t\n\r ] | "/>" | ">"):8:49, found "template/a"
+            <img src="@routes.Assets.versioned("template/assets/img/logo.png")" alt="">
+                                                ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getXml(LegacyScanner.scala:937)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchLT$1(LegacyScanner.scala:295)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:303)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.loop(ScalaToplevelMtags.scala:280)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:56)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:19)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:43)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:125)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:384)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$4(DefinitionProvider.scala:304)
+	at scala.Option.orElse(Option.scala:477)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:304)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:296)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$definitionOrReferences$1(MetalsLspService.scala:2524)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.MetalsLspService.definitionOrReferences(MetalsLspService.scala:2520)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$definition$1(MetalsLspService.scala:1409)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLspService.definition(MetalsLspService.scala:1408)
+	at scala.meta.internal.metals.WorkspaceLspService.definition(WorkspaceLspService.scala:373)
+	at scala.meta.metals.lsp.DelegatingScalaService.definition(DelegatingScalaService.scala:69)
+	... 16 more
+
+dez 20, 2023 1:47:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+GRAVE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: file:///C:/Fabiano/PortFólio/portifolio/html/template/header.scala.scala:8: error: malformed xml literal, expected:
+Expected ([\t\n\r ] | "/>" | ">"):8:49, found "template/a"
+            <img src="@routes.Assets.versioned("template/assets/img/logo.png")" alt="">
+                                                ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getXml(LegacyScanner.scala:937)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchLT$1(LegacyScanner.scala:295)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:303)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.loop(ScalaToplevelMtags.scala:280)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:56)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:19)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:43)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:125)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:384)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$4(DefinitionProvider.scala:304)
+	at scala.Option.orElse(Option.scala:477)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:304)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:296)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$definitionOrReferences$1(MetalsLspService.scala:2524)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.MetalsLspService.definitionOrReferences(MetalsLspService.scala:2520)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$definition$1(MetalsLspService.scala:1409)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLspService.definition(MetalsLspService.scala:1408)
+	at scala.meta.internal.metals.WorkspaceLspService.definition(WorkspaceLspService.scala:373)
+	at scala.meta.metals.lsp.DelegatingScalaService.definition(DelegatingScalaService.scala:69)
+	... 16 more
+
+dez 20, 2023 1:47:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+GRAVE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: file:///C:/Fabiano/PortFólio/portifolio/html/template/header.scala.scala:8: error: malformed xml literal, expected:
+Expected ([\t\n\r ] | "/>" | ">"):8:49, found "template/a"
+            <img src="@routes.Assets.versioned("template/assets/img/logo.png")" alt="">
+                                                ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getXml(LegacyScanner.scala:937)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchLT$1(LegacyScanner.scala:295)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:303)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.loop(ScalaToplevelMtags.scala:280)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:56)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:19)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:43)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:125)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:384)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$4(DefinitionProvider.scala:304)
+	at scala.Option.orElse(Option.scala:477)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:304)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:296)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$definitionOrReferences$1(MetalsLspService.scala:2524)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.MetalsLspService.definitionOrReferences(MetalsLspService.scala:2520)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$definition$1(MetalsLspService.scala:1409)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLspService.definition(MetalsLspService.scala:1408)
+	at scala.meta.internal.metals.WorkspaceLspService.definition(WorkspaceLspService.scala:373)
+	at scala.meta.metals.lsp.DelegatingScalaService.definition(DelegatingScalaService.scala:69)
+	... 16 more
+
+dez 20, 2023 1:47:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+GRAVE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: file:///C:/Fabiano/PortFólio/portifolio/html/template/header.scala.scala:8: error: malformed xml literal, expected:
+Expected ([\t\n\r ] | "/>" | ">"):8:49, found "template/a"
+            <img src="@routes.Assets.versioned("template/assets/img/logo.png")" alt="">
+                                                ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getXml(LegacyScanner.scala:937)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchLT$1(LegacyScanner.scala:295)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:303)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.loop(ScalaToplevelMtags.scala:280)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:56)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:19)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:43)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:125)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:384)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$4(DefinitionProvider.scala:304)
+	at scala.Option.orElse(Option.scala:477)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:304)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:296)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$definitionOrReferences$1(MetalsLspService.scala:2524)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.MetalsLspService.definitionOrReferences(MetalsLspService.scala:2520)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$definition$1(MetalsLspService.scala:1409)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLspService.definition(MetalsLspService.scala:1408)
+	at scala.meta.internal.metals.WorkspaceLspService.definition(WorkspaceLspService.scala:373)
+	at scala.meta.metals.lsp.DelegatingScalaService.definition(DelegatingScalaService.scala:69)
+	... 16 more
+
+dez 20, 2023 1:47:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+GRAVE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: file:///C:/Fabiano/PortFólio/portifolio/html/template/header.scala.scala:8: error: malformed xml literal, expected:
+Expected ([\t\n\r ] | "/>" | ">"):8:49, found "template/a"
+            <img src="@routes.Assets.versioned("template/assets/img/logo.png")" alt="">
+                                                ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getXml(LegacyScanner.scala:937)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchLT$1(LegacyScanner.scala:295)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:303)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.loop(ScalaToplevelMtags.scala:280)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:56)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:19)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:43)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:125)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:384)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$4(DefinitionProvider.scala:304)
+	at scala.Option.orElse(Option.scala:477)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:304)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:296)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$definitionOrReferences$1(MetalsLspService.scala:2524)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.MetalsLspService.definitionOrReferences(MetalsLspService.scala:2520)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$definition$1(MetalsLspService.scala:1409)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLspService.definition(MetalsLspService.scala:1408)
+	at scala.meta.internal.metals.WorkspaceLspService.definition(WorkspaceLspService.scala:373)
+	at scala.meta.metals.lsp.DelegatingScalaService.definition(DelegatingScalaService.scala:69)
+	... 16 more
+
+dez 20, 2023 1:47:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+GRAVE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: file:///C:/Fabiano/PortFólio/portifolio/html/template/header.scala.scala:8: error: malformed xml literal, expected:
+Expected ([\t\n\r ] | "/>" | ">"):8:49, found "template/a"
+            <img src="@routes.Assets.versioned("template/assets/img/logo.png")" alt="">
+                                                ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getXml(LegacyScanner.scala:937)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchLT$1(LegacyScanner.scala:295)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:303)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.loop(ScalaToplevelMtags.scala:280)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:56)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:19)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:43)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:125)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:384)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$4(DefinitionProvider.scala:304)
+	at scala.Option.orElse(Option.scala:477)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:304)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:296)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$definitionOrReferences$1(MetalsLspService.scala:2524)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.MetalsLspService.definitionOrReferences(MetalsLspService.scala:2520)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$definition$1(MetalsLspService.scala:1409)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLspService.definition(MetalsLspService.scala:1408)
+	at scala.meta.internal.metals.WorkspaceLspService.definition(WorkspaceLspService.scala:373)
+	at scala.meta.metals.lsp.DelegatingScalaService.definition(DelegatingScalaService.scala:69)
+	... 16 more
+
+dez 20, 2023 1:47:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+GRAVE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: file:///C:/Fabiano/PortFólio/portifolio/html/template/header.scala.scala:8: error: malformed xml literal, expected:
+Expected ([\t\n\r ] | "/>" | ">"):8:49, found "template/a"
+            <img src="@routes.Assets.versioned("template/assets/img/logo.png")" alt="">
+                                                ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getXml(LegacyScanner.scala:937)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchLT$1(LegacyScanner.scala:295)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:303)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.loop(ScalaToplevelMtags.scala:280)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:56)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:19)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:43)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:125)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:384)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$4(DefinitionProvider.scala:304)
+	at scala.Option.orElse(Option.scala:477)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:304)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:296)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$definitionOrReferences$1(MetalsLspService.scala:2524)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.MetalsLspService.definitionOrReferences(MetalsLspService.scala:2520)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$definition$1(MetalsLspService.scala:1409)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLspService.definition(MetalsLspService.scala:1408)
+	at scala.meta.internal.metals.WorkspaceLspService.definition(WorkspaceLspService.scala:373)
+	at scala.meta.metals.lsp.DelegatingScalaService.definition(DelegatingScalaService.scala:69)
+	... 16 more
+
+dez 20, 2023 1:47:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+GRAVE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: file:///C:/Fabiano/PortFólio/portifolio/html/template/header.scala.scala:8: error: malformed xml literal, expected:
+Expected ([\t\n\r ] | "/>" | ">"):8:49, found "template/a"
+            <img src="@routes.Assets.versioned("template/assets/img/logo.png")" alt="">
+                                                ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getXml(LegacyScanner.scala:937)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchLT$1(LegacyScanner.scala:295)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:303)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.loop(ScalaToplevelMtags.scala:280)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:56)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:19)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:43)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:125)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:384)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$4(DefinitionProvider.scala:304)
+	at scala.Option.orElse(Option.scala:477)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:304)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:296)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$definitionOrReferences$1(MetalsLspService.scala:2524)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.MetalsLspService.definitionOrReferences(MetalsLspService.scala:2520)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$definition$1(MetalsLspService.scala:1409)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLspService.definition(MetalsLspService.scala:1408)
+	at scala.meta.internal.metals.WorkspaceLspService.definition(WorkspaceLspService.scala:373)
+	at scala.meta.metals.lsp.DelegatingScalaService.definition(DelegatingScalaService.scala:69)
+	... 16 more
+
+dez 20, 2023 1:47:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+GRAVE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: file:///C:/Fabiano/PortFólio/portifolio/html/template/header.scala.scala:8: error: malformed xml literal, expected:
+Expected ([\t\n\r ] | "/>" | ">"):8:49, found "template/a"
+            <img src="@routes.Assets.versioned("template/assets/img/logo.png")" alt="">
+                                                ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getXml(LegacyScanner.scala:937)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchLT$1(LegacyScanner.scala:295)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:303)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.loop(ScalaToplevelMtags.scala:280)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:56)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:19)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:43)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:125)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:384)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$4(DefinitionProvider.scala:304)
+	at scala.Option.orElse(Option.scala:477)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:304)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:296)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$definitionOrReferences$1(MetalsLspService.scala:2524)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.MetalsLspService.definitionOrReferences(MetalsLspService.scala:2520)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$definition$1(MetalsLspService.scala:1409)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLspService.definition(MetalsLspService.scala:1408)
+	at scala.meta.internal.metals.WorkspaceLspService.definition(WorkspaceLspService.scala:373)
+	at scala.meta.metals.lsp.DelegatingScalaService.definition(DelegatingScalaService.scala:69)
+	... 16 more
+
+dez 20, 2023 1:47:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+GRAVE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: file:///C:/Fabiano/PortFólio/portifolio/html/template/header.scala.scala:8: error: malformed xml literal, expected:
+Expected ([\t\n\r ] | "/>" | ">"):8:49, found "template/a"
+            <img src="@routes.Assets.versioned("template/assets/img/logo.png")" alt="">
+                                                ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getXml(LegacyScanner.scala:937)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchLT$1(LegacyScanner.scala:295)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:303)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.loop(ScalaToplevelMtags.scala:280)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:56)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:19)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:43)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:125)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:384)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$4(DefinitionProvider.scala:304)
+	at scala.Option.orElse(Option.scala:477)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:304)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:296)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$definitionOrReferences$1(MetalsLspService.scala:2524)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.MetalsLspService.definitionOrReferences(MetalsLspService.scala:2520)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$definition$1(MetalsLspService.scala:1409)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLspService.definition(MetalsLspService.scala:1408)
+	at scala.meta.internal.metals.WorkspaceLspService.definition(WorkspaceLspService.scala:373)
+	at scala.meta.metals.lsp.DelegatingScalaService.definition(DelegatingScalaService.scala:69)
+	... 16 more
+
+dez 20, 2023 1:47:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+GRAVE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: file:///C:/Fabiano/PortFólio/portifolio/html/template/header.scala.scala:8: error: malformed xml literal, expected:
+Expected ([\t\n\r ] | "/>" | ">"):8:49, found "template/a"
+            <img src="@routes.Assets.versioned("template/assets/img/logo.png")" alt="">
+                                                ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getXml(LegacyScanner.scala:937)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchLT$1(LegacyScanner.scala:295)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:303)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.loop(ScalaToplevelMtags.scala:280)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:56)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:19)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:43)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:125)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:384)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$4(DefinitionProvider.scala:304)
+	at scala.Option.orElse(Option.scala:477)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:304)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:296)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$definitionOrReferences$1(MetalsLspService.scala:2524)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.MetalsLspService.definitionOrReferences(MetalsLspService.scala:2520)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$definition$1(MetalsLspService.scala:1409)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLspService.definition(MetalsLspService.scala:1408)
+	at scala.meta.internal.metals.WorkspaceLspService.definition(WorkspaceLspService.scala:373)
+	at scala.meta.metals.lsp.DelegatingScalaService.definition(DelegatingScalaService.scala:69)
+	... 16 more
+
+dez 20, 2023 1:47:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+GRAVE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: file:///C:/Fabiano/PortFólio/portifolio/html/template/header.scala.scala:8: error: malformed xml literal, expected:
+Expected ([\t\n\r ] | "/>" | ">"):8:49, found "template/a"
+            <img src="@routes.Assets.versioned("template/assets/img/logo.png")" alt="">
+                                                ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getXml(LegacyScanner.scala:937)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchLT$1(LegacyScanner.scala:295)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:303)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.loop(ScalaToplevelMtags.scala:280)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:56)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:19)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:43)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:125)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:384)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$4(DefinitionProvider.scala:304)
+	at scala.Option.orElse(Option.scala:477)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:304)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:296)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$definitionOrReferences$1(MetalsLspService.scala:2524)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.MetalsLspService.definitionOrReferences(MetalsLspService.scala:2520)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$definition$1(MetalsLspService.scala:1409)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLspService.definition(MetalsLspService.scala:1408)
+	at scala.meta.internal.metals.WorkspaceLspService.definition(WorkspaceLspService.scala:373)
+	at scala.meta.metals.lsp.DelegatingScalaService.definition(DelegatingScalaService.scala:69)
+	... 15 more
+
+dez 20, 2023 1:47:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+GRAVE: Internal error: java.lang.reflect.InvocationTargetException
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: file:///C:/Fabiano/PortFólio/portifolio/html/template/header.scala.scala:8: error: malformed xml literal, expected:
+Expected ([\t\n\r ] | "/>" | ">"):8:49, found "template/a"
+            <img src="@routes.Assets.versioned("template/assets/img/logo.png")" alt="">
+                                                ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.getXml(LegacyScanner.scala:937)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchLT$1(LegacyScanner.scala:295)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:303)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:211)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.loop(ScalaToplevelMtags.scala:280)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.indexRoot(ScalaToplevelMtags.scala:56)
+	at scala.meta.internal.mtags.MtagsIndexer.index(MtagsIndexer.scala:19)
+	at scala.meta.internal.mtags.MtagsIndexer.index$(MtagsIndexer.scala:18)
+	at scala.meta.internal.mtags.ScalaToplevelMtags.index(ScalaToplevelMtags.scala:43)
+	at scala.meta.internal.mtags.Mtags$.allToplevels(Mtags.scala:125)
+	at scala.meta.internal.metals.DefinitionProvider.fromMtags(DefinitionProvider.scala:384)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$4(DefinitionProvider.scala:304)
+	at scala.Option.orElse(Option.scala:477)
+	at scala.meta.internal.metals.DefinitionProvider.$anonfun$positionOccurrence$1(DefinitionProvider.scala:304)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.DefinitionProvider.positionOccurrence(DefinitionProvider.scala:296)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$definitionOrReferences$1(MetalsLspService.scala:2524)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.MetalsLspService.definitionOrReferences(MetalsLspService.scala:2520)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$definition$1(MetalsLspService.scala:1409)
+	at scala.meta.internal.metals.CancelTokens$.future(CancelTokens.scala:38)
+	at scala.meta.internal.metals.MetalsLspService.definition(MetalsLspService.scala:1408)
+	at scala.meta.internal.metals.WorkspaceLspService.definition(WorkspaceLspService.scala:373)
+	at scala.meta.metals.lsp.DelegatingScalaService.definition(DelegatingScalaService.scala:69)
+	... 15 more
+
+2023.12.20 13:47:50 WARN  no build target for: C:\Fabiano\PortFólio\portifolio\html\template\main.scala.scala
+2023.12.20 13:47:55 WARN  no build target for: C:\Fabiano\PortFólio\portifolio\html\template\sidebar.scala
+2023.12.20 13:48:01 WARN  no build target for: C:\Fabiano\PortFólio\portifolio\html\template\footer.scala
+dez 20, 2023 1:48:04 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTÊNCIA: Unmatched cancel notification for request id 66
+dez 20, 2023 1:48:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTÊNCIA: Unmatched cancel notification for request id 105
+dez 20, 2023 1:48:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTÊNCIA: Unmatched cancel notification for request id 121
+dez 20, 2023 1:48:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTÊNCIA: Unmatched cancel notification for request id 169
+dez 20, 2023 1:49:01 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report C:\Fabiano\PortFólio\.metals\.reports\metals-full\2023-12-20\r_compiler-error_13-49-01-466.md
+dez 20, 2023 1:49:04 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: A severe compiler error occurred, full details of the error can be found in the error report C:\Fabiano\PortFólio\.metals\.reports\metals-full\2023-12-20\r_compiler-error_13-49-04-395.md
+2023.12.20 15:20:35 INFO  Shutting down server
+2023.12.20 15:20:35 INFO  shutting down Metals
+2023.12.20 15:20:35 INFO  Exiting server
